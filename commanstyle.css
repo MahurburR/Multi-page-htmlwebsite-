@@ -1,0 +1,77 @@
+
+:root{
+    --color:rgb(201, 232, 236);
+}
+*{
+ font-family: 'Roboto', sans-serif;
+ margin: 0; padding: 0;
+ box-sizing: border-box;
+ text-transform: capitalize;
+ text-decoration: none;
+ transition: all .2s linear
+ ;
+}
+html{
+ font-size:58%;
+ 
+}
+body{
+    overflow-x: hidden;
+}
+.header{
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+padding: 1rem 2rem;
+position: fixed;
+top: 0; left: 0;
+z-index: 100;
+}
+.header .icon{
+    font-size: 2rem;
+    color: cornsilk;
+    font-weight: bold;
+    
+}
+.header .icon i{
+padding: 1rem;
+font-size: 3rem;
+color: cornsilk;
+}
+.header .navbar ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.header .navbar ul li{
+    margin: 1.5rem;
+}
+.header .navbar ul li a{
+    font-size: 2rem;
+    color: cornsilk
+}
+.header .navbar ul li a:hover{
+    color: var(--color);
+}
+.header .fa-bars{
+    color: cornsilk;
+    cursor: pointer;
+    font-size: 3rem;
+    display: none;
+}
+.home{
+    min-height: 100vh; 
+    width:100vw;
+    background: linear-gradient(rgb(36, 164, 187), var(--color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+    padding: 0 1rem;
+    position: relative;
+    overflow: hidden !important;
+}
